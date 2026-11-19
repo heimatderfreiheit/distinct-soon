@@ -39,10 +39,14 @@ body{margin:0;background:var(--cream);color:var(--ink);overflow:hidden;
   font-family:var(--any);font-stretch:78%;font-weight:600;
   font-size:clamp(30px,5.2vw,84px);line-height:1.02;letter-spacing:-.01em;max-width:13em}
 .satz i{font-family:var(--fr);font-style:italic;font-weight:400;font-stretch:normal;letter-spacing:-.02em}
+.imp{position:fixed;right:var(--gx);bottom:calc(clamp(22px,4vw,56px) + env(safe-area-inset-bottom,0px));
+  font-family:var(--any);font-stretch:78%;font-weight:500;font-size:15px;color:#5d5950;text-decoration:none}
+.imp:hover{color:var(--ink)}
 </style>
 </head>
 <body>
 <h1 class="wm" aria-label="distinct"><span class="d" aria-hidden="true"><span class="dt">d</span><span class="db">d</span></span><span aria-hidden="true">istinct</span></h1>
 <p class="satz">Liberty looks good on you <i>soon</i></p>
+<a class="imp" href="impressum/">Impressum</a>
 </body>
 </html>
