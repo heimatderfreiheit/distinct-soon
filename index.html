@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>distinct</title>
+<meta name="description" content="Liberty looks good on you. Soon.">
+<meta name="theme-color" content="#F3EEE4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Fraunces:ital,opsz,wght@1,9..144,300..500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F3EEE4; --ink:#1b1a18;
+  --any:'Anybody','Helvetica Neue',Arial,sans-serif;
+  --fr:'Fraunces',Georgia,serif;
+  --gx:max(20px,env(safe-area-inset-left,0px));
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--cream);color:var(--ink);overflow:hidden;
+  display:flex;flex-direction:column;justify-content:space-between;
+  min-height:100vh;min-height:100svh;
+  animation:in 1.4s cubic-bezier(.2,.7,.2,1) both}
+@keyframes in{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){body{animation:none}}
+
+.wm{margin:0;padding:clamp(16px,2.2vw,36px) var(--gx) 0;
+  font-family:var(--any);font-weight:800;font-stretch:112%;
+  font-size:calc((100vw - 2 * var(--gx)) * .2085);line-height:.9;letter-spacing:-.035em;white-space:nowrap;
+  color:var(--cream);-webkit-text-stroke:.014em var(--ink);paint-order:stroke fill}
+.wm .d{position:relative;display:inline-block;--g:.045em}
+.wm .dt{display:inline-block;clip-path:polygon(-30% -30%,140% -30%,140% 92%,-30% 44%)}
+.wm .db{position:absolute;left:0;top:0;clip-path:polygon(-30% 44%,140% 92%,140% 140%,-30% 140%);
+  transform:translate(calc(var(--g) * -.8),var(--g))}
+
+.satz{margin:0;padding:0 var(--gx) calc(clamp(22px,4vw,56px) + env(safe-area-inset-bottom,0px));
+  font-family:var(--any);font-stretch:78%;font-weight:600;
+  font-size:clamp(30px,5.2vw,84px);line-height:1.02;letter-spacing:-.01em;max-width:13em}
+.satz i{font-family:var(--fr);font-style:italic;font-weight:400;font-stretch:normal;letter-spacing:-.02em}
+</style>
+</head>
+<body>
+<h1 class="wm" aria-label="distinct"><span class="d" aria-hidden="true"><span class="dt">d</span><span class="db">d</span></span><span aria-hidden="true">istinct</span></h1>
+<p class="satz">Liberty looks good on you <i>soon</i></p>
+</body>
+</html>
